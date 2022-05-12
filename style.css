@@ -1,0 +1,608 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+
+/* ♥ Header ♥ */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+header img{
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+
+header h2{
+    display: inline;
+    color: #EB594E;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+
+li{
+    display: inline;
+    list-style: none;
+    margin: 1rem;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F25252;
+    font-weight: 600;
+}
+
+header a:hover{
+    color: #F25252;
+    background-image: url(sie.jpg);
+    border-radius: 15%;
+    padding: 0.4rem;
+    box-shadow: 0 0 10px 1px #F25252;
+}
+
+
+/* ♣ Hero Section ♣ */
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-image: url(sie.jpg);
+    border: #025E73;
+    box-shadow: 0px 5px 15px #025E73;
+    border-radius: 15%;
+    width: 80%;
+}
+
+.hero-img{
+    border: solid 1px #55CCD9;
+    box-shadow: 0px 5px 15px #55CCD9;
+    border-radius: 15%;
+}
+
+.hero-div1{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+h1{
+   color: #025E73;
+   text-shadow: 2px 2px 15px #55CCD9;
+   font-size: 3rem;
+   margin-left: 3rem;
+}
+
+.h-btn{
+    color: #025E73;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #55CCD9;
+    border: solid 1px #55CCD9;
+    padding: 0.5rem;
+    border-radius: 15%;
+    box-shadow: 0 0 10px 1px #55CCD9;
+    width: 200px;
+    margin-left: 5rem;
+}
+
+.h-btn:hover{
+    padding: 1rem;
+    color: #F25252;
+    box-shadow: 0 0 10px 1px #F25252;
+}
+
+.hero-section p{
+    color: #025E73;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+
+/* ♦ Slider Section ♦ */
+
+.slider-section{
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+ 
+.slider{
+    overflow: hidden;
+    height: 36rem;
+    box-shadow: 0px 3px 15px #F25252;
+}
+
+.slider figure{
+    display: flex;
+    width: 500%;
+    position: relative;
+    left: 0;
+    animation: 20s slider infinite;
+    
+}
+
+.slider-img{
+    width: 20%;
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}
+
+
+/* ♣ Acomodations Section ♣ */
+
+.acomodations-section{
+    background-image: url(sie.jpg);
+    padding: 5rem;
+    box-shadow: 0px 5px 15px #f28f79;
+    
+}
+
+.acomodations-section h3{
+    color: #F25252;
+    padding: 8px;
+}
+
+
+.aco-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aco-card{
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    height: 400px;
+    width: 300px;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+/* ♦ Rooms Section ♦ */
+
+.suite-container{
+    flex-wrap: wrap;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.royal-suite{
+    background-image: url(royals.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    border: #025E73;
+    box-shadow: 0px 5px 15px #025E73;
+    border-radius: 15%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.doble-suite{
+    background-image: url(doble.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    border: #025E73;
+    box-shadow: 0px 5px 15px #025E73;
+    border-radius: 15%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.simple-suite{
+    background-image: url(simple.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    border: #025E73;
+    box-shadow: 0px 5px 15px #025E73;
+    border-radius: 15%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habi-suite{
+    background-image: url(dobles.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    border: #025E73;
+    box-shadow: 0px 5px 15px #025E73;
+    border-radius: 15%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fami-suite{
+    background-image: url(familiar.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    border: #025E73;
+    box-shadow: 0px 5px 15px #025E73;
+    border-radius: 15%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.villa-suite{
+    background-image: url(villa.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    border: #025E73;
+    box-shadow: 0px 5px 15px #025E73;
+    border-radius: 15%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.reserve-btn{
+    color: #025E73;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #55CCD9;
+    border: solid 1px #55CCD9;
+    padding: 0.5rem;
+    border-radius: 15%;
+    box-shadow: 0 0 10px 1px #55CCD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reserve-btn:hover{
+    color: #F25252;
+    box-shadow: 0 0 10px 1px #F25252;
+}
+
+.rooms-section h3{
+    color: #F25252;
+    font-size: 2rem;
+
+}
+
+
+
+/* ♣ Reviews Section ♣ */
+
+.review-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(sie.jpg);
+    box-shadow: 0px 5px 15px #f28f79;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.review-section h3{
+    font-size: 4rem;
+    color: #025E73;
+}
+
+.review-section h2{
+    font-size: 2.5rem;
+    color: #025E73;
+}
+
+.review-section p{
+    color: #025E73;
+    font-weight: 600;
+}
+
+
+/* ♠ Contact Section ♠ */
+.contact-section{
+    display: flex;
+    justify-content: center;
+    padding: 6.875em 2.5em 8.125em;
+    text-align: center;
+    align-items: center;
+    }
+    
+    form{
+        width: 25%;
+       
+    }
+    
+    label{
+        font-size: 1rem;
+        color: #F25252;
+        padding: 0.25em;
+        margin: 0.125em;
+    }
+    
+    input{
+        margin-bottom: 0.625em;
+        border: 1px solid #58646F;
+    }
+    
+    ::placeholder{
+        color: #025E73;
+    }
+    
+    .section-border{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #025E73;
+        border-radius: 30px;
+    }
+    
+    .contact-section h2{
+        font-size: 3.125rem;
+        font-weight: bold;
+        color: #F25252;
+    }
+    
+    .contact-section h3{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #025E73;
+    }
+    
+    
+    .contact-links{
+        margin: 0.625em;
+        padding: 1.25em;
+        flex-direction: column;
+    }
+    .contact-links ul{
+    margin-top: 1.875em;
+    }
+    
+    .contact-links ul li{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    
+    .contact-links li:hover a{
+        color: #F25252;
+    }
+    
+    .contact-links li:hover i{
+        color: #025E73;
+    }
+    
+    .social-item{
+        text-decoration: none;
+        color: #025E73;
+    }
+    
+    .contact-form{
+        margin: 0.625em;
+        padding: 1.25em;
+        flex-direction: column;
+    }
+    
+    .contact-name{
+     display: flex;
+    margin-top: 1em;
+    }
+    
+    .name-surname{
+        display: block;
+        margin: 0.188em;
+    }
+    
+    
+    .contact-mail{
+        display: flex;
+        display: block;
+        margin: 0.188em;
+    }
+    
+    textarea{
+        width: 15.625em;
+       height: 100px;
+       margin: 0.188em;
+    }
+    
+    label{
+        font-weight: 800;
+        
+    }
+    
+    .input-class{
+        border-radius: 20px;
+        border: 1px solid #F25252;
+        height: 3em;
+        padding-left: 1.25em;
+    }
+    
+    .textarea-class{
+        border-radius: 15px;
+        border: 1px solid #F25252;
+        height: 10em;
+        padding-left: 1.25em;
+        resize: none;
+    }
+    
+    .contact-button{
+        color: #F25252;
+        padding: 1em;
+        display: flex;
+        background-color: #55CCD9;
+        border: solid 1px #55CCD9;
+        box-shadow: 0 0 10px 1px #55CCD9;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .contact-button:hover{
+        border: 1px solid #EB594E ;
+        background: #EB594E;
+        color: #55CCD9;
+    }
+
+
+/*  ♥ Footer ♥  */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3{
+    display: inline;
+    color: #EB594E;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+footer a{
+    text-decoration: none;
+    color: #EB594E;
+}
+
+footer p{
+    color: #F25252;
+    font-size: 1.2rem;
+}
+
+.iconito{
+    margin: 1rem;
+    font-size: 2rem;
+    color: #F25252;
+}
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 1000px){
+    .section-border{
+        flex-direction: column;
+    }
+    .aco-container{
+        flex-direction: column;
+    }
+    .review-section{
+        flex-direction: column;
+    }
+    nav{
+        display: none;
+    }
+
+    footer p{
+        display: none;
+    }
+    .social-footer{
+        display: none;
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-div2{
+        display: none;
+    }
+    .slider{
+        height: 22rem;
+    }
+
+
+}
